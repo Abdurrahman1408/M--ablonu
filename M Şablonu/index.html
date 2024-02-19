@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Deneme Sitesi - Bu Bir Eğitim Amacıyla Yapılan Deneme ve Çalışma Sitesidir. HTML5, CSS3 ve JavaScript Amacı İle Yapılan Bir Sitedir"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="image/web-site-favicon.webp" />
+    <link rel="stylesheet" href="main.css" />
+    <title>M Şablonu</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="header">
+        <header>
+          <div class="container">
+            <div class="header-flex">
+              <div class="header-logo">
+                <a href="index.html" title="Logo">
+                  <img src="image/web-site-logo.webp" alt="Logo" />
+                </a>
+              </div>
+              <ul class="header-pages">
+                <li class="active">
+                  <a href="index.html" title="Anasayfa">Anasayfa</a>
+                </li>
+                <li>
+                  <a href="about.html" title="Hakkımızda">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="products.html" title="Ürünlerimiz">Ürünlerimiz</a>
+                </li>
+                <li>
+                  <a href="discover.html" title="Keşfet">Keşfet</a>
+                </li>
+                <li>
+                  <a href="damage-help.html" title="Hasar ve Yardım"
+                    >Hasar ve Yardım</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" title="İletişim">İletişim</a>
+                </li>
+                <div class="secretMenu">
+                  <div class="secretLogin">
+                    <a href="javascript:;" title="Giriş Yap">Giriş Yap</a>
+                  </div>
+                  <div class="secretSearch">
+                    <a href="javascript:;" title="Arama">Arama</a>
+                  </div>
+                </div>
+              </ul>
+              <div class="header-login-search">
+                <div class="login">
+                  <div class="login-bg">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Giriş</p>
+                  </div>
+                  <div class="dropdown">
+                    <form id="login-form">
+                      <h2>Giriş Yap</h2>
+                      <div class="login-form-area">
+                        <input type="email" name="email" placeholder="E-Mail" />
+                      </div>
+
+                      <div class="login-form-area">
+                        <input
+                          type="password"
+                          name="password"
+                          placeholder="Şifre"
+                        />
+                      </div>
+
+                      <div class="login-form-area">
+                        <label>
+                          <input type="checkbox" name="checkbox" />Beni Hatırla
+                        </label>
+                      </div>
+
+                      <button class="login-button">Giriş Yap</button>
+
+                      <div class="form-links">
+                        <a href="javascript:;" title="Şifremi Unuttum"
+                          >Şifremi Unuttum</a
+                        >
+                        <a
+                          id="openRegisterModal"
+                          href="javascript:;"
+                          title="Kayıt Ol"
+                          >Kayıt Ol</a
+                        >
+                      </div>
+                    </form>
+
+                    <!-- Modal -->
+
+                    <div id="myModal" class="registerModal">
+                      <div class="registerModal-content">
+                        <form>
+                          <div class="modalHeader">
+                            <h5 class="modal-title">Kayıt Ol</h5>
+                            <span class="close" id="closeModalBtn"
+                              >&times;</span
+                            >
+                          </div>
+
+                          <div class="login-form-area">
+                            <input
+                              type="email"
+                              name="email"
+                              placeholder="E-Mail"
+                            />
+                          </div>
+
+                          <div class="login-form-area">
+                            <input
+                              type="password"
+                              name="password"
+                              placeholder="Şifre"
+                            />
+                          </div>
+
+                          <div class="login-form-area">
+                            <input
+                              type="password"
+                              name="password"
+                              placeholder="Tekrar Şifre"
+                            />
+                          </div>
+
+                          <div class="login-form-area">
+                            <label>
+                              <input type="checkbox" name="checkbox" />Beni
+                              Hatırla
+                            </label>
+                          </div>
+
+                          <button class="login-button">Kayıt Ol</button>
+
+                          <div class="form-links">
+                            <a
+                              id="openLoginModal"
+                              href="javascript:;"
+                              title="Zaten Bir Hesabınız Mı Var?"
+                              >Zaten Bir Hesabınız Mı Var?</a
+                            >
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <!-- Modal Bitiş -->
+
+                    <!-- Login Modal -->
+
+                    <div id="myModal2" class="registerModal">
+                      <div class="registerModal-content">
+                        <form>
+                          <div class="modalHeader">
+                            <h5 class="modal-title">Giriş Yap</h5>
+                            <span class="close" id="closeModalBtn2"
+                              >&times;</span
+                            >
+                          </div>
+
+                          <div class="login-form-area">
+                            <input
+                              type="email"
+                              name="email"
+                              placeholder="E-Mail"
+                            />
+                          </div>
+
+                          <div class="login-form-area">
+                            <input
+                              type="password"
+                              name="password"
+                              placeholder="Şifre"
+                            />
+                          </div>
+
+                          <div class="login-form-area">
+                            <label>
+                              <input type="checkbox" name="checkbox" />Beni
+                              Hatırla
+                            </label>
+                          </div>
+
+                          <button class="login-button">Giriş Yap</button>
+
+                          <div class="form-links">
+                            <a
+                              id="openRegisterModal2"
+                              href="javascript:;"
+                              title="Kayıt Ol"
+                              >Kayıt Ol</a
+                            >
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <!-- Login Modal Bitiş -->
+                  </div>
+                </div>
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div id="webapp_cover">
+                <div id="menu_button">
+                  <input type="checkbox" id="menu_checkbox" />
+                  <label for="menu_checkbox" id="menu_label">
+                    <div id="menu_text_bar"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <section>
+        <div class="banner">
+          <div class="banner-images">
+            <img src="image/banner.png" alt="Banner" />
+          </div>
+          <div class="container">
+            <div class="banner-content">
+              <div class="banner-text">
+                <div id="banner-trafik" class="banner-item active">
+                  <div class="banner-title">
+                    <span class="sub-title">Trafik Sigortası</span>
+                  </div>
+
+                  <div class="banner-description">
+                    <h1>
+                      En Yüksek Ve En Hızlı Online Sigorta Acente Tekliflerini
+                      Alınız.
+                    </h1>
+                  </div>
+
+                  <div class="banner-subject">
+                    <span
+                      >It is a long established fact that a reader will be
+                      distracted by the readable content</span
+                    >
+                  </div>
+                </div>
+                <div id="banner-kasko" class="banner-item">
+                  <div class="banner-title">
+                    <span>Kasko Sigortası</span>
+                  </div>
+
+                  <div class="banner-description">
+                    <h1>
+                      En Yüksek Ve En Hızlı Online Sigorta Acente Tekliflerini
+                      Alınız.
+                    </h1>
+                  </div>
+
+                  <div class="banner-subject">
+                    <span
+                      >It is a long established fact that a reader will be
+                      distracted by the readable content</span
+                    >
+                  </div>
+                </div>
+                <div id="banner-saglik" class="banner-item">
+                  <div class="banner-title">
+                    <span class="sub-title">Sağlık Sigortası</span>
+                  </div>
+
+                  <div class="banner-description">
+                    <h1>
+                      En Yüksek Ve En Hızlı Online Sigorta Acente Tekliflerini
+                      Alınız.
+                    </h1>
+                  </div>
+
+                  <div class="banner-subject">
+                    <span
+                      >It is a long established fact that a reader will be
+                      distracted by the readable content</span
+                    >
+                  </div>
+                </div>
+                <div id="banner-dask" class="banner-item">
+                  <div class="banner-title">
+                    <span class="sub-title">Dask Sigortası</span>
+                  </div>
+
+                  <div class="banner-description">
+                    <h1>
+                      En Yüksek Ve En Hızlı Online Sigorta Acente Tekliflerini
+                      Alınız.
+                    </h1>
+                  </div>
+
+                  <div class="banner-subject">
+                    <span
+                      >It is a long established fact that a reader will be
+                      distracted by the readable content</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="banner-buttons">
+                <a href="javascript:;" class="get-offer">Teklif Al</a>
+                <a href="javascript:;" class="detail-info">Detaylı Bilgi Al</a>
+              </div>
+              <div class="thumbnail-cards">
+                <div id="card-trafik" class="thumbnail-card active">
+                  <div class="thumbnail-icon">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <div class="thumbnail-title">Trafik Sigortası</div>
+                </div>
+                <div id="card-kasko" class="thumbnail-card">
+                  <div class="thumbnail-icon">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <div class="thumbnail-title">Kasko Sigortası</div>
+                </div>
+                <div id="card-saglik" class="thumbnail-card">
+                  <div class="thumbnail-icon">
+                    <i class="fa-solid fa-wave-pulse"></i>
+                  </div>
+                  <div class="thumbnail-title">Sağlık Sigortası</div>
+                </div>
+                <div id="card-dask" class="thumbnail-card">
+                  <div class="thumbnail-icon">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                  </div>
+                  <div class="thumbnail-title">Dask Sigortası</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding insurance">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <span class="sub-title">Nasıl Çalışır?</span>
+            </div>
+            <div>
+              <h2 class="module-title">3 Adımda Sigortalan</h2>
+            </div>
+          </div>
+          <div class="M-cards">
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-info"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Bilgileri Gir</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content
+                </p>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Teklif Al</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content
+                </p>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Poliçeni Oluştur</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding avantages">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <span class="sub-title">Avantajlarımız</span>
+            </div>
+            <div>
+              <h2 class="module-title">Avantajlarımız</h2>
+            </div>
+          </div>
+
+          <div class="M-cards">
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Güven</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Zamandan Tasarruf</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Uygun Fiyatlar</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>7/24 Destek</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding damage">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <span class="sub-title">Hasar Anında</span>
+            </div>
+            <div>
+              <h2 class="module-title">Hasar Anında</h2>
+            </div>
+          </div>
+          <div class="M-cards">
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-bandage"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Hasar Anında Yapılması Gerekenler</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+              <div class="M-card-link">
+                <a href="javascript:;" title="Başvuru Yap">Başvuru Yap</a>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-copy"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Kaza Tespit Tutanağı</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+              <div class="M-card-link">
+                <a href="javascript:;" title="Başvuru Yap">Başvuru Yap</a>
+              </div>
+            </div>
+            <div class="M-card">
+              <div class="M-card-icon">
+                <i class="fa-solid fa-note-sticky"></i>
+              </div>
+              <div class="M-card-title">
+                <h3>Hasar İhbarı</h3>
+              </div>
+              <div class="M-card-description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of
+                </p>
+              </div>
+              <div class="M-card-link">
+                <a href="javascript:;" title="Başvuru Yap">Başvuru Yap</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+           
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
